@@ -16,15 +16,35 @@ body, html {
 height: 4318px;
 background-color: #BC56A0;
 }
-#Profile_image{
-    width: 297.881px;
-height: 400px;
-flex-shrink: 0;
-border-radius: 56px;
-background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
-h1, #bio {
- margin-left: 300px;
+
+/* Style for the profile image */
+#Profile_image {
+    width: 290px;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 56px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+/* Style for the text next to the image */
+.about-me-text {
+    max-width: 600px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+   
 }
 #navbar {
     position: fixed;
@@ -108,7 +128,7 @@ margin-left: 10px;
 font-size: 20px;     border-radius: 34px;
 background: #E1B310;
 width: auto;
-height: 600px;
+height: 400px;
 flex-shrink: 0;
 margin-top: 30px;
 margin-left: 10px;
