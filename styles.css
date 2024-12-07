@@ -1,0 +1,165 @@
+/* CSS Variables for Google Font and Color Palette */
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --primary-color: #333;
+    --secondary-color: #f0f0f0;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: var(--font-family);
+    width: 1440px;
+height: 4318px;
+background-color: #BC56A0;
+}
+#Profile_image{
+    width: 297.881px;
+height: 400px;
+flex-shrink: 0;
+border-radius: 56px;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+h1, #bio {
+ margin-left: 300px;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+#navbar a:link {
+    color: var(--link-color);
+}
+
+#navbar a:visited {
+    color: var(--link-color);
+}
+
+#navbar a:hover {
+    color: var(--link-hover-color);
+}
+
+#navbar a:active {
+    color: var(--link-hover-color);
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.project-tile, .reflection {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ #about-me-section {
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-size: 20px;
+border-radius: 34px;
+background: #3882C6;
+width: 850px;
+height: 400px;
+flex-shrink: 0;
+margin-top: 136px;
+margin-left: 10px;
+  }
+  #projects{
+  color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-size: 20px;     border-radius: 34px;
+background: #5645C0;
+width: auto;
+height: 600px;
+flex-shrink: 0;
+margin-top: 30px;
+margin-left: 10px;
+  }
+#reflections{
+     color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-size: 20px;     border-radius: 34px;
+background: #E1B310;
+width: auto;
+height: 600px;
+flex-shrink: 0;
+margin-top: 30px;
+margin-left: 10px;
+}
+#More-work{
+color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-size: 20px;     border-radius: 34px;
+background: #9144AC;
+width: auto;
+height: 600px;
+flex-shrink: 0;
+margin-top: 30px;
+margin-left: 10px;    
+}
+#design{
+color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-size: 20px;     border-radius: 34px;
+background: #29AF87;
+width: auto;
+height: 300px;
+flex-shrink: 0;
+margin-top: 30px;
+margin-left: 10px;    
+}
+#contact{
+color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-size: 20px;     border-radius: 34px;
+background: #E18110;
+width: auto;
+height: 150px;
+flex-shrink: 0;
+margin-top: 30px;
+margin-left: 10px;    
+}
+@media (max-width: 768px) {
+    #navbar {
+        padding: 0.5rem;
+    }
+
+    #navbar a {
+        margin: 0 0.5rem;
+    }
+
+    .project-tile, .reflection {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+}
