@@ -16,7 +16,9 @@ body, html {
 height: 4318px;
 background-color: #BC56A0;
 }
-
+p {
+    font-size: 24px;
+}
 .about-me-container {
     display: flex;
     align-items: center;
@@ -35,6 +37,7 @@ background-color: #BC56A0;
 /* Style for the text next to the image */
 .about-me-text {
     max-width: 600px;
+    margin-left: 30px;
 }
 
 /* Responsive design for smaller screens */
@@ -80,6 +83,35 @@ background-color: #BC56A0;
     color: var(--link-hover-color);
 }
 
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-tile {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-tile a {
+    display: block;
+    text-decoration: none;
+}
+
+.project-tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 #welcome-section {
     height: 100vh;
     display: flex;
@@ -104,7 +136,7 @@ font-size: 20px;
 border-radius: 34px;
 background: #3882C6;
 width: 850px;
-height: 400px;
+height: 500px;
 flex-shrink: 0;
 margin-top: 136px;
 margin-left: 10px;
