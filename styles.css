@@ -6,19 +6,45 @@
     --link-color: #007bff;
     --link-hover-color: #0056b3;
 }
-
+.gravitas-one-regular {
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .philosopher-regular {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: var(--font-family);
     width: 1440px;
-height: 4318px;
+height: 2700px;
 background-color: #BC56A0;
 }
+header, p {
+    display: block; /* Ensure both elements are block-level */
+    width: 100%; /* Ensure they take up the full width of their container */
+    margin: 0; /* Reset any default margins */
+    padding: 0; /* Reset any default padding */
+  }
+  
+  h1 {
+    margin-bottom: 20px; /* Add some space below the h1 */
+    text-align: center; /* Center the text */
+    font-family: 'Gravitas One', serif; /* Use the Gravitas One font */
+    font-size: 40px; /* Set the font size */
+  }
+  
 p {
     font-size: 24px;
+    margin-top: 0;
+    font-family: 'Philosopher', sans-serif;
 }
+
 .about-me-container {
     display: flex;
     align-items: center;
@@ -89,12 +115,18 @@ p {
     gap: 20px;
     padding: 20px;
 }
-
+.project-tiles-container {
+    display: flex; /* Use Flexbox to arrange tiles horizontally */
+    flex-wrap: wrap; /* Allow tiles to wrap to the next line if necessary */
+    gap: 20px; /* Add space between tiles */
+}
 .project-tile {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+        flex: 1 1 calc(33.333% - 20px); /* Adjust the width of each tile */
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .project-tile a {
@@ -128,6 +160,12 @@ p {
     justify-content: center;
     align-items: center;
 }
+#top-boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
  #about-me-section {
     color: #fff;
     padding: 10px;
@@ -138,7 +176,7 @@ background: #3882C6;
 width: 850px;
 height: 500px;
 flex-shrink: 0;
-margin-top: 136px;
+margin-top: 150px;
 margin-left: 10px;
   }
   #projects{
@@ -153,6 +191,23 @@ flex-shrink: 0;
 margin-top: 30px;
 margin-left: 10px;
   }
+
+  .extra-work {
+  display: flex; /* Flexbox layout for horizontal arrangement */
+  justify-content: space-between; /* Space between images */
+  
+  width: 80%; /* Adjust width as needed */
+  max-width: 800px; /* Optional max-width for better control */
+}
+
+.more-work {
+  width: 40%; /* Set width of each image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners for images */
+  object-fit: cover; /* Ensure images cover their container */
+  margin-top: 90px;
+  margin-left: 26px
+}
 #reflections{
      color: #fff;
     padding: 10px;
@@ -184,7 +239,7 @@ color: #fff;
 font-size: 20px;     border-radius: 34px;
 background: #29AF87;
 width: auto;
-height: 300px;
+height: 230px;
 flex-shrink: 0;
 margin-top: 30px;
 margin-left: 10px;    
@@ -196,7 +251,7 @@ color: #fff;
 font-size: 20px;     border-radius: 34px;
 background: #E18110;
 width: auto;
-height: 150px;
+height: 200px;
 flex-shrink: 0;
 margin-top: 30px;
 margin-left: 10px;    
@@ -214,4 +269,15 @@ margin-left: 10px;
         margin: 0.5rem;
         padding: 0.5rem;
     }
+}
+.writting {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 20px;
 }
